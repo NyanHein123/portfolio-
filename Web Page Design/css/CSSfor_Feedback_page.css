@@ -1,0 +1,70 @@
+/* The followings are the styles for the clearing 
+water bottles gaame*/
+#game_board{
+   height: 400px !important;
+   width: 400px !important;
+   padding: 0 !important;
+   border: 10px solid green !important;
+   background-color: lightgrey !important; 
+   box-sizing: content-box !important;
+    margin: 0 auto !important;
+    display: flex !important;
+   flex-wrap: wrap !important;
+}
+
+#game_board div{
+    width: 50px !important;
+    height: 50px !important;
+    border: 1px solid whitesmoke !important;
+    font-size: 30px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}   
+
+.cell_clicked{
+    background: darkgray;
+
+}
+
+.t1{
+    color: blue;
+}
+.t2{
+    color: green;
+}
+.t3{
+    color:red;
+}
+.t4{
+    color:navy;
+}
+.t5{
+    color:brown;
+}
+.t6{
+    color:teal;
+}
+.t7{
+    color: black;
+}
+.t8{
+    color: gray;
+}
+.num_of_bottle{
+color: red !important;
+}
+#flag_btn{
+  width:100px;
+  height: 50px;
+  font-size: 30px;
+  background-color: lightgray;
+  border:none;  
+}
+/* removing border if the screen size becomes too low */
+@media only screen and (max-width: 449px){
+#game_section{
+    border:none !important;
+}
+
+}

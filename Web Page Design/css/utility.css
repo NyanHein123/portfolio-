@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: Roboto,sans-serif !important;
+    background: #EAEBED !important;
+}
+.logoimage{
+    display: block !important;
+    height: 70px  !important;
+    width:200px  !important;
+}
+.active{
+    text-decoration: underline  !important;
+    color:#198754 !important;
+}
+.addOpacity {
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out; 
+}
+.fixed-top{
+    width: 100% !important;
+}
+nav:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+/* adding background to the Index page */
+#indexBody {
+    background: url(../images/coverbackground.jpg) no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width:100% !important;
+    height:100vh !important;
+}

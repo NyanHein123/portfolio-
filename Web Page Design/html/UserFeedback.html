@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback Page</title>
+    <link href="../css/utility.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/CSSfor_Feedback_page.css">
+  </head>
+  <body class="bg-light">
+    <!--The following is the modal for terms and conditions-->
+    
+    <div class="modal fade" id="termsAndConditions" tabindex="-1" aria-labelledby="TermsAndConditions" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="TermsAndConditions">Terms And Conditions</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Data Collection: We collect and store the information provided in this form solely for feedback processing purposes.
+              </li>
+              <li> Privacy: Your personal information will not be shared with third parties without your consent.</li>
+              <li> Feedback Usage: Your feedback may be used to improve our services.</li>
+              <li>Contact: By providing your contact details, you agree to be contacted for feedback purposes.</li>
+              <li>Non-confidential: Please avoid submitting confidential or sensitive information.</li>
+              <li>Agreement: By submitting the form, you agree to these terms and conditions.</li>
+              <li> Data Security: We take data protection seriously.</li>
+              <li> Updates: We may update these terms without notice.</li>
+            </ul>
+           </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--The following is the navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-text-white border border-start-0 border-end-0 border-top-0 border-5 border-success">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="logoimage" src="../images/logo2.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-4">
+                  <a class="nav-link fs-5 fw-bold" aria-current="page" href="SP_Contributions.html">SP'Green Initatives</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link fs-5 fw-bold" href="myEarthPledge.html">Personal Goals</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link fs-5 fw-bold" href="aboutme.html">About me</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link fs-5 fw-bold" href="UserFeedback.html">Feedback</a>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </nav>
+    <!--The following section is about the frequently asked questions about the environment-->
+    <section>
+      <h2 class="mt-5 display-5 fw-bold text-center text-decoration-underline text-dark">"Frequently Asked Questions About the environmental Issues"</h2>
+      <!--The follwing questons and answers are 
+      referenced from 
+    (https://www.epa.gov/climatechange-science/frequently-asked-questions-about-climate-change)-->
+      <div class="accordion" style="margin:5rem auto;width:90%;" id="EnvironmentalQuestions">
+        <!--Accordio-item1-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="fa-solid fa-book"></i>&nbsp;Does science generally agree that humans are responsible for the current climate change?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#EnvironmentalQuestions">
+            <div class="accordion-body fs-4">
+              <strong>Yes! </strong>Climate scientists agree: 
+              Humans significantly contribute to climate change by releasing excess greenhouse gases 
+              through activities like burning fossil fuels, farming, livestock, and deforestation. 
+              The Intergovernmental Panel on Climate Change's Sixth Assessment Report confirms that human influence has unequivocally 
+              warmed the atmosphere, oceans, and land, leading to rapid and widespread changes across Earth's systems.
+            </div>
+          </div>
+        </div>
+        <!--Accordion-item2-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="fa-solid fa-temperature-arrow-up"></i>&nbsp;What reason is there to worry about a few degrees difference in the average world temperature?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#EnvironmentalQuestions">
+            <div class="accordion-body fs-4">
+              <strong> The effects of even a slight increase 
+                in global temperature—say, one or two degrees—are profound.</strong> Significant changes in local 
+              and regional climates can have an adverse effect on infrastructure, ecosystems, agriculture, public health, 
+              and water resources. There are more heat waves, more days over 90°F, and extreme weather events like storms, 
+              droughts, and floods, according to the 2018 National Climate Assessment. In addition, vulnerable places 
+              may be submerged if sea levels rise by one to four feet by the end of the century. 
+              Climate change must be addressed immediately in order to mitigate these effects.
+            </div>
+          </div>
+        </div>
+        <!--Accordion-item3-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <i class="fa-solid fa-stairs"></i>&nbsp;What steps may people take to lessen their exposure to climate change risks?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#EnvironmentalQuestions">
+            <div class="accordion-body fs-4">
+              <strong>By reducing their greenhouse gas emissions and 
+                getting ready for future changes,</strong>  individuals can reduce their risk of climate change. 
+              The planet will be affected by the actions made today for many generations to come. 
+              Planning and development should incorporate climate change concerns while identifying and 
+              mitigating vulnerabilities. These steps protect vulnerable groups from the health and safety risks 
+              that climate change poses, including small children, the elderly, and the impoverished.
+            </div>
+          </div>
+        </div>
+        <!--Accordion item4-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+              <i class="fa-solid fa-thumbs-up"></i>&nbsp;What are the advantages of acting right away?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#EnvironmentalQuestions">
+            <div class="accordion-body fs-4">
+              <strong>Delaying action on climate change escalates 
+                its detrimental effects on the planet and human health.</strong> 
+                Failure to act promptly may necessitate more extreme and costly measures to control
+                 greenhouse gases later. The latest National Climate Assessment reveals
+                  that global efforts to cut emissions can save tens of thousands of lives annually in the US 
+                  by the century's end and prevent billions of dollars in damages related to water shortages,
+                   wildfires, agricultural losses, flooding, and other impacts. Taking immediate action can reduce climate risks
+                 while enhancing the environment, community infrastructure, transportation systems, and overall health.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ask a question Form-->
+      <div class="input-group" style="width:90%; margin:0 auto 2rem;" >
+        <input type="text" class="form-control fs-5" placeholder="Ask an Environmental Question" aria-label="Envrionmental_Question" aria-describedby="envrionmental_question_btn">
+        <button class="btn btn-outline-primary" type="button" id="envrionmental_question_btn">Submit</button>
+      </div>
+      
+
+   </section>
+
+   <!--The following is the gaming section-->
+   <section class="m-2 text-center border border-success border-5 rounded-5 " id="game_section">
+      <h2 class="text-center mt-4 text-decoration-underline">"Before Giving the Feedback, Let's Clear the Land of Plastic Bottles."</h2>
+     
+      <h3 class="text-center my-5">Number of Water Bottles: <span class="" id="num_of_bottles"></span></h3>
+
+        <div id="game_board">
+          
+        </div>
+        <br>
+        <button class="m-4" id="flag_btn">🚩</button>
+    
+  </section>
+    <!--The following section is for the feedback form -->
+    <section class="container-fluid my-5">
+      <h2 class="text-center h1 text-decoration-underline">Give a Feedback Before You Leave!</h2>
+
+      <!--The followiing is the feedback form-->
+      <form class="row g-3 needs-validation w-75 m-auto border border-primary rounded border-5 p-5" novalidate>
+        <h3 class="h-3 fw-semibold">Feedback Form</h3>
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First name</label>
+          <input type="text" class="form-control" id="firstName" value="" required>
+          <div class="valid-feedback">
+            Correct!&#128516;
+          </div>
+          <div class="invalid-feedback">
+            Please enter your first name. &#128546;
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lastName" value="" required>
+          <div class="valid-feedback">
+            Correct! &#128516;
+          </div>
+          <div class="invalid-feedback">
+            Please enter your second name. &#128546;
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="email_input" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email_input" placeholder="emailAddress@example.com" required>
+          <div class="valid-feedback">
+            Correct! &#128516;
+          </div>
+          <div class="invalid-feedback">
+            Please provide an email address. &#128546;
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phoneNumber" required>
+          <div class="valid-feedback">
+            Correct! &#128516;
+          </div>
+          <div class="invalid-feedback">
+            Please provide a phone number. &#128546;
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Select a Feedback Type</label>
+        <select class="form-select" aria-label="Feedback Type Select" required>
+          <option value="">Feedback Type</option>
+          <option value="1">General Feedback</option>
+          <option value="2">Bug Report</option>
+          <option value="3">Feature Request</option>
+          <option value="4">User Experience (UX) Issue</option>
+          <option value="5">Other</option>
+        </select>
+        <div class="valid-feedback">
+          Great! &#128516;
+        </div>
+        <div class="invalid-feedback">
+          Please provide a feedback type. &#128546;
+        </div>
+       </div>
+
+       <div class="col-md-6">
+        <div class="form-check">
+          <label for="EmailContact" class="form-label d-block">Contact Preference</label>
+        <input type="radio" class="form-check-input" id="EmailContact" name="radio-stacked" required>
+        <label class="form-check-label" for="EmailContact">Email</label>
+        </div>
+        
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="PhoneContact" name="radio-stacked" required>
+        <label class="form-check-label" for="PhoneContact">Phone</label>
+        <div class="valid-feedback">
+          Great! &#128516;
+        </div>
+        <div class="invalid-feedback">Please select an Option.  &#128546;</div>
+        </div>
+        
+      </div>
+
+      <div class="col-md-12">
+        <label for="customRange3" class="form-label">Rating</label>
+        <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3">
+      </div>
+
+      <div class="col-md-12">
+        <label for="validationTextarea" class="form-label">Textarea</label>
+        <textarea class="form-control" id="validationTextarea" placeholder="Feedback" required></textarea>
+        <div class="valid-feedback">
+          Great! &#128516;
+        </div>
+        <div class="invalid-feedback">
+          Please enter a feedback.
+        </div>
+      </div>
+
+        <div class="col-md-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              <a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="modal" data-bs-target="#termsAndConditions">Agree to terms and conditions</a>
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit Feedback</button>
+        </div>
+      </form>
+
+   </section>
+   <!--the following section is the footer-->
+   <footer class="container-fluid p-4 text-center" style="background: #98C6DB;">
+    <div class="row ms-4 g-3 bg-">
+      <div class="col-12 col-md-4 lead">
+        <i class="bi bi-geo-alt-fill"></i>Senja Road
+      </div>
+      <div class="col-12 col-md-4 lead text-nowrap">
+        <i class="bi bi-envelope-at-fill"></i>leblanckaisen@gmail.com
+      </div>
+      <div class="col-12 col-md-4 lead">
+        <i class="bi bi-telephone-plus-fill"></i>+65-82863099
+    </div>
+    </div>
+    <div class="row lead mt-4" style="background: #0B666A;margin: 0;">
+      <div class="col text-center text-white">&copy;All rights reserverd. 2023 NYAN HEIN </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/scriptForNav.js"></script>
+    <script src="../js/JavascriptForFeedback.js"></script>
+    <script src="../js/JavascriptForGame.js"></script>
+  </body>
+</html>

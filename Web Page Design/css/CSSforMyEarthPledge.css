@@ -1,0 +1,32 @@
+#backgroundImage{
+    --background-image: url(../images/backgroundImage.jpg);
+    --backg-image-opacity: 0.93;
+    position: relative;
+}
+#backgroundImage::after{
+content:'';
+position:absolute;
+z-index: -1;
+inset: 0;
+opacity: var(--backg-image-opacity);
+background-image: var(--background-image);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+#addingPadding{
+    padding-top: 7rem;
+}
+
+#fontstyle1,#fontstyle2{
+    font-family: 'Libre Baskerville', serif !important;
+}
+.slide{
+    width: 70% !important;
+    margin: 30px auto 50px !important;
+}
+
+#myGoal1:hover,#myGoal2:hover,#myGoal3:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}

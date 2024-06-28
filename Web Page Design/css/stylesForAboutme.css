@@ -1,0 +1,21 @@
+#facebook,#instagram,#whatsapp{
+    font-size: 2rem;
+}
+.beliefValueSection{
+    background:radial-gradient(circle at left bottom, #FFDDC0, #CFDFF2) !important;
+    color:#801728 !important;
+}
+.badge{
+    text-align: left !important;
+}
+.valueCards:hover {
+    transform:scale(1.02);
+    transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width:576px){
+    #interest1,#interest2{
+        width: 100% !important;
+    }
+}
+/* this effect will be used when the scroll bar is used */
+

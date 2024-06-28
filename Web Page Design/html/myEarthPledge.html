@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Goals</title>
+    <link href="../css/utility.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link href="../css/CSSforMyEarthPledge.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--The following is the modal(modal_number1) which will be 
+    trigged by the first card in the my personal goal section-->
+    <div class="modal fade" id="modal_number1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">SP Green Day</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+           <!--The text below is referenced from SP's 
+              instagram page, https://www.instagram.com/p/CsSdOM6L9Li/-->
+          <div class="modal-body">
+            The image shown in the card is about an environmental event in SP.
+            On 13<sup>th</sup> May 2023, which was the SG Clean day, a clean-up
+                event was held at SP in which 1000 SP students took part.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--The following is the modal(modal_number2) which will be 
+    trigged by the second card in the my personal goal section-->
+    <div class="modal fade" id="modal_number2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Mu Us Desert</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+            <!--The text below is referenced from
+                https://news.cgtn.com/news/2020-05-05/NE-China-s-Mu-Us-Desert-turns-green-QfenYiTFoA/index.html
+              -->
+          <div class="modal-body">
+            The image shown is about the Mu Us Desert, which is one of the largest desert(42,200 square kilometers) 
+            in China and used to be completely devoid of trees and farmland,
+                has been turned green. Such an insipiration!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!--The following is the modal(modal_number3) which will be 
+    trigged by the third card in the my personal goal section-->
+    <div class="modal fade" id="modal_number3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-danger">El Yunque National Forest</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+            <!--The text below is referenced from
+                https://news.cgtn.com/news/2020-05-05/NE-China-s-Mu-Us-Desert-turns-green-QfenYiTFoA/index.html
+              -->
+          <div class="modal-body">
+            The image shown is about El Yunque National Forest in Puerto Rico, which needs to identify 
+            the type of trees which could not withstand the hurricane. Click <a href="https://news.climate.columbia.edu/2018/06/05/artificial-intelligence-climate-environment/"
+            target="_blank">here</a>
+            to explore more. 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--The following is the modal for suggestion box which will be triggered by the button at the bottom of the page-->
+    <div class="modal fade" id="modal_suggestion" tabindex="-1"  aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add a Suggestion</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="mb-3">
+                <label for="suggestion" class="col-form-label">Suggestion:</label>
+                <textarea class="form-control" id="suggestion"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send Suggestion</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--The following is the navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-text-white border border-start-0 border-end-0 border-top-0 border-5 border-success">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="logoimage" src="../images/logo2.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-4">
+                  <a class="nav-link fs-5 fw-bold" aria-current="page" href="SP_Contributions.html">SP'Green Initatives</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link fs-5 fw-bold" href="myEarthPledge.html">Personal Goals</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link fs-5 fw-bold" href="aboutme.html">About me</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link fs-5 fw-bold" href="UserFeedback.html">Feedback</a>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </nav>
+    <!--The following section is the start of the page with backgroud image-->
+    <div class="container-fluid h-100 p-5" id="backgroundImage">
+      <div class="row" id="addingPadding">
+        <div class="col-12 col sm-6">
+          <h1 class="text-warning ms-5 display-3 fw-bold" id="fontstyle1">
+            Green Nation
+          </h1>
+          <h1 class="text-warning ms-5 display-3 fw-bold" id="fontstyle2">
+            To Build
+          </h1>
+          <figure class="ms-5">
+            <blockquote class="blockquote text-light fs-3">
+              <p>&ldquo;The wealth of the nation is its air, water, soil, forests, minerals, <br>
+                rivers, lakes, oceans, scenic beauty, wildlife habitats and biodiversity... <br>
+                that's all there is. That's the whole economy. That's where all the economic activity <br>
+                and jobs come from. These biological systems are the sustaining wealth of the world.&rdquo;</p>
+            </blockquote>
+            <figcaption class="blockquote-footer text-light fs-3">
+              Gaylord Nelson in<cite title="Source Title"> Beyond Earth Day</cite>
+            </figcaption>
+          </figure>
+          <a href="#start" class="btn btn-outline-warning btn-lg ms-5" role="button">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <!--The follwing section is with the image slider and text to encourage people what can 
+    we do to save the earth.-->
+    <section class="container-fluid" id="start">
+      <h2 class="display-5 text-uppercase text-center text-decoration-underline mt-5" style="color:#222338;">"What can we do to save the world?"</h2>
+      <!--image slider-->
+      <div id="image_slider" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#image_slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#image_slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#image_slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#image_slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner rounded-5">
+          <div class="carousel-item active">
+             <!--The image below is from
+            https://medium.com/evolve-you/10-ways-to-reduce-reuse-recycle-83dd37a088aa-->
+            <img src="../images/slide1.jpg" class="d-block w-100 rounded-5" alt="slide1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-white text-decoration-underline">Three Rs</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--The image below is from
+            (https://www.parentcircle.com/energy-conservation-importance-and-how-i-make-it-part-of-life-in-home/article)-->
+            <img src="../images/slide2.jpg" class="d-block w-100 rounded-5" alt="slide2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-black text-decoration-underline">Conserve Energy</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+             <!--The image below is from
+            (https://tomorrow.city/a/an-efficient-public-transport-system-transforms-a-city-into-a-smart-city)-->
+            <img src="../images/slide3.jpg" class="d-block w-100 rounded-5" alt="slide3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-black text-decoration-underline">Substainable Transport</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--The image below is from
+            (https://www.geeksforgeeks.org/wild-life-in-india/)-->
+            <img src="../images/slide4.png" class="d-block w-100 rounded-5" alt="slide4">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-black text-decoration-underline">Conserve Wild Life</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#image_slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#image_slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="row gy-3 py-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <!--First Card-->
+          <div class="card border border-success rounded-4 h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold" style="color: #7633F9;"><i class="fa-solid fa-recycle"></i> Reduce, Reuse and Recycle</h5>
+               <!--Reduce, Reuse and Recyle is referenced from roguedisposal.com 
+                (https://roguedisposal.com/resources/education/recycling/exploring-the-three-rs-of-waste-management-reduce-reuse-recycle)-->
+              <p class="card-text"><span class="fw-semibold">Reduce</span><br>
+                We should and we can reduce the wastes, use less water bottles and 
+                bring our own bags while shopping.<br>
+                <span class="fw-semibold">Reuse</span><br>
+                We should find ways to reuse the things. For example, 
+            we could donate or share our clothes we don't want to use
+             to the charity organization. This also save the carbon dioxide(CO<sub>2</sub>) emission.<br>
+             <span class="fw-semibold">Recycle</span><br>
+             We should dispose of our products which are recyclable products into the recycle bin, 
+            This, in turn, enhances the substainability.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <!--Second Card-->
+          <div class="card border border-success rounded-4 h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold" style="color: #7633F9;"><i class="fa-solid fa-bus-simple"></i> <i class="fa-solid fa-train"></i> Substainable Transport</h5>
+             <!--The following substainble transport is referenced from two websites
+          https://transportation.ucla.edu/blog/5-environmental-benefits-sustainable-transportation  and 
+        another one is from Straits time(https://www.straitstimes.com/multimedia/graphics
+            /2022/01/singapore-protect-sea-levels-rise/index.html?shell) -->
+              <p class="card-text" style="color:#222338;">
+                Driving our own vehicles produce a lot of carbon dioxide, a gas which is responsible for green house effect. 
+                Green house effect,in turn, is responsible for sea-level rising. This is a dangerous environmental issue, especially for
+                <span>the countries like lowest-lying countries, like </span> <span>Singapore</span>. 30 per cent of all land in Singapore is 
+                less than 5m above sea level.<cite><a href="https://www.straitstimes.com/multimedia/graphics/2022/01/singapore-protect-sea-levels-rise/index.html?shell" 
+                  target="_blank">(Straittimes)</a></cite> So,we need to reduce using our own mobile
+                vehicles and try to use public transport.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <!-- Third Card-->
+          <div class="card border border-success rounded-4 h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold" style="color: #7633F9;"><i class="fa-solid fa-lightbulb"></i> Conserve Energy</h5>
+               <!--The following content for conserving energy is referenced from 
+            the website,https://constantenergy.net/blog/why-is-it-important-to-conserve-energy/#:~:text=When%20we%20use%20more%20efficient,burning%20coal%20and%20fossil%20fuels. -->
+              <p class="card-text" style="color:#222338;">
+                We produce most of the energy from the burning of fossil fuels. 
+                So, we should conserve energy by taking the following actions. </p>
+                  <ul style="color:#222338;">
+                    <li>Disconnecting the lamps, and kitchen appliances, and other electrical
+                              devices when they are not in use</li>
+                    <li>Using LED lighting because they consume less energy </li>
+                    <li>Only using your dishwasher or washing machine when the load is full</li>
+                  </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <!--Fourth Card-->
+          <div class="card border border-success rounded-4 h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold" style="color: #7633F9;"><i class="fa-solid fa-hippo"></i> Caring and Maintaining Wild life</h5>
+              <p class="card-text" style="color:#222338;">
+                Biodiversity is really important for both humans and all the living things on the earth. 
+                    We, all the species, are depending on each other. For example, one third of the world's crop 
+                    production is attributed to pollinators like birds, bees, and other insects. As indiviuduals,
+                    we can achieve this by eating organic food which do not use fertilizers and 
+                    insecticides,participating and suppoprting activites and organizations which encourages to maintain
+                    biodiversity.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--The following section is about my personal goals-->
+    <section class="container-fluid">
+      <h2 class="display-5 text-uppercase text-center text-decoration-underline mt-5" style="color:#222338;">
+      "My Personal Goals"</h2>
+      <div class="row gy-3 mt-3 py-4">
+        
+        <div class="col-12 col-sm-6 col-lg-4">
+          <!--When the following cards are clicked their respective 
+          modals will be shown. -->
+
+            <!--First Card-->
+            <div class="card w-100 h-100" id="myGoal1" data-bs-toggle="modal" data-bs-target="#modal_number1">
+               <!--The image below is taken from 
+            SP's instagram page(https://www.instagram.com/p/CsSdOM6L9Li/)-->
+              <img src="../images/SPGreenDay.jpg" class="card-img-top" alt="SP Green Day">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase fw-semibold">My First Goal</h5>
+                <p class="card-text text-start">As an individual, the first thing I can do is participating
+                  in environmental activities, such as clean-ups activity
+                  and planting trees activities. As a student from Singapore
+                  polytechnic, I will particitate in such activites, organized by
+                  SP or student organizations from SP.</p>
+              </div>
+            </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+
+             <!--Second Card-->
+            <div class="card w-100 h-100" id="myGoal2" data-bs-toggle="modal" data-bs-target="#modal_number2">
+                <!--The image below is taken from 
+            https://news.cgtn.com/news/2020-05-05/NE-China-s-Mu-Us-Desert-turns-green-QfenYiTFoA/index.html -->
+              <img src="../images/MuUsDesert.jpg" class="card-img-top" alt="MU US Desert">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase fw-semibold">My Second Goal</h5>
+                <p class="card-text text-start">The second goal for the enviroment I want to do is to make my home town
+                  a green place. My home town, <span>Chauk from Myanmar</span> is the hottest
+                  town in Myanmar. I know this cannot be done by myself. But at least, I can 
+                  start organizing the events of planting trees. </p>
+              </div>
+            </div>
+
+        </div>
+        <div class="col-12 offset-0 col-sm-8 offset-sm-2 offset-lg-0 col-sm-6 col-lg-4">
+          
+            <!--Third Card-->
+            <div class="card w-100 h-100" id="myGoal3" data-bs-toggle="modal" data-bs-target="#modal_number3">
+                <!--The image and some of the text above is referenced from 
+            https://news.climate.columbia.edu/2018/06/05/artificial-intelligence-climate-environment/ -->
+             <img src="../images/forestAfterHurricane.jpg" class="card-img-top" alt="SP Green Day">
+             <div class="card-body">
+               <h5 class="card-title text-uppercase fw-semibold">My Third Goal</h5>
+               <p class="card-text text-start">The third goal is that as a student studying in artificial intelligence
+                , I want to use Artificial Intelligence technology to solve the environmental
+                probems, for example, predicting the natural disasters and identifying the amount of 
+                and types of trees which are destroyed in a forest after a hurricane. The former is important to 
+                recover the forest so that the forest will be able to reduce carbon dioxide in the atmosphere. </p>
+             </div>
+           </div>
+        </div>
+      </div>
+      <!--The following button will trigger a modal to add a suggestion.-->
+      <div class="d-grid gap-2 mb-3">
+        <button class="btn btn-warning fs-5" type="button" data-bs-toggle="modal" data-bs-target="#modal_suggestion">
+          Suggest Any Goal You would like to Add
+        </button>
+      </div>
+
+    </section>
+
+     <!--the following section is the footer-->
+     <footer class="container-fluid p-4 text-center" style="background: #98C6DB;">
+      <div class="row ms-4 g-3 bg-">
+        <div class="col-12 col-md-4 lead">
+          <i class="bi bi-geo-alt-fill"></i>Senja Road
+        </div>
+        <div class="col-12 col-md-4 lead text-nowrap">
+          <i class="bi bi-envelope-at-fill"></i>leblanckaisen@gmail.com
+        </div>
+        <div class="col-12 col-md-4 lead">
+          <i class="bi bi-telephone-plus-fill"></i>+65-82863099
+      </div>
+      </div>
+      <div class="row lead mt-4" style="background: #0B666A;margin: 0;">
+        <div class="col text-center text-white">&copy;All rights reserverd. 2023 NYAN HEIN </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/scriptForNav.js"></script>
+  </body>
+</html>
